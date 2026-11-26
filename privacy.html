@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Privacy Policy - SocialControl</title>
+  <meta name="description" content="Privacy Policy for SocialControl on iOS and Android.">
+  <link rel="icon" type="image/svg+xml" href="icon.svg">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <header class="topbar">
+      <a class="brand" href="./">
+        <img src="icon.svg" alt="SocialControl icon">
+        <span>SocialControl</span>
+      </a>
+      <nav class="nav" aria-label="Primary">
+        <a href="./">Overview</a>
+        <a href="support.html">Support</a>
+        <a href="privacy.html" aria-current="page">Privacy</a>
+        <a href="terms.html">Terms</a>
+      </nav>
+    </header>
+
+    <main>
+      <div class="doc-header">
+        <h1>Privacy Policy</h1>
+        <p class="meta">Effective date: 2026-11-26 &middot; SocialControl (iOS &amp; Android)</p>
+      </div>
+
+      <article class="section-card doc-body">
+        <h2>Summary</h2>
+        <p>SocialControl is a locally configured browsing workspace for selected social websites. No SocialControl account is required. SocialControl has no developer-operated backend that stores your data, no analytics SDK, no advertising SDK, no tracking identifiers, and never downloads executable code.</p>
+
+        <h2>Website data is separate from SocialControl</h2>
+        <p>When you open a space (Instagram, YouTube, X, Reddit, or Snapchat), that third-party website receives your network address and whatever you send to it, including sign-in credentials, searches, messages, and uploaded files. Each website's own cookies, analytics, advertising, retention practices, and privacy policy apply. SocialControl does not make those websites private or anonymous.</p>
+        <p>SocialControl's app code does not capture account passwords or session-cookie values and does not record your messages. Bundled filters inspect website markup and visible labels locally on your device only to hide selected interface elements.</p>
+
+        <h2>On-device storage and isolation</h2>
+        <p>Each space uses its own isolated on-device browser store (WKWebsiteDataStore on iOS, WebView ProfileStore on Android) so cookies and website storage stay separate across spaces and keep you signed in across launches. Your filter toggles, enabled spaces, schedules, and session timers are stored locally in private app preferences. On Android, cloud backup and device-to-device transfer are disabled (<code>allowBackup="false"</code>).</p>
+        <p>Optional local filter activity is off by default. When enabled, generic event labels and counts remain in memory for the current launch only (capped at 40 recent events) with no URL paths, search queries, media IDs, credentials, or message content.</p>
+
+        <h2>Optional signed filter rule updates</h2>
+        <p>If enabled by the publisher, SocialControl checks at most twice per day while open for an Ed25519-signed list of CSS selectors and website path rules (never executable code). The request sends no cookies, account details, or identifiers; as with any HTTPS request, the hosting server sees your IP address.</p>
+
+        <h2>Widgets, controls, tiles, and Live Activities</h2>
+        <p>To display your session countdown, Sleep Mode schedule, and enabled space names, the app writes a small on-device status snapshot containing only enabled space names, session start/end timestamps, and Sleep Mode times. It never contains URLs, accounts, messages, or browsing history, and never leaves your device.</p>
+
+        <h2>iOS Screen Time (optional)</h2>
+        <p>The Screen Time build requests individual Apple Screen Time authorization only when you choose to enable it. Selected apps, categories, and websites are stored locally as Apple's opaque tokens inside the app's signed App Group alongside your focus-window, Post Mode, and Sleep Mode schedules. Nothing is sent to us. The browser-only iOS build does not request Screen Time access.</p>
+
+        <h2>Android App Shield (AccessibilityService) &amp; Message Alerts (optional)</h2>
+        <p><strong>App Shield</strong> is off until you turn it on. It uses Android's AccessibilityService API solely to detect which app comes to the foreground so it can redirect selected social apps to their SocialControl spaces or pause chosen apps during focus windows and Sleep Mode. It is configured so it cannot read window content (<code>canRetrieveWindowContent="false"</code>), never performs taps or gestures, and never collects or shares data. Installed launchable app names are queried locally only to show the picker and never leave your device. You can turn it off anytime in Android Settings &rarr; Accessibility.</p>
+        <p><strong>Message Alerts</strong> are off until you grant Android Notification Access. SocialControl inspects notifications strictly from the social apps you choose, reposts their title and text locally so tapping opens the matching SocialControl space, and ignores all other apps. Nothing is saved, logged, or sent off your device. You can revoke access anytime in Android Settings.</p>
+
+        <h2>Camera, microphone, and file uploads</h2>
+        <p>If a website inside a space requests camera, microphone, or file access (for example, calls or media uploads), the operating system asks for your permission. Uploaded files go directly to the website you selected, not to SocialControl. Location access is not granted.</p>
+
+        <h2>Your controls and data erasure</h2>
+        <p>In Settings, you can clear cached files while keeping sign-ins, clear an individual space's local website data and sign-in, or erase all local SocialControl data, preferences, timers, and schedules. This does not delete third-party social accounts or clear Safari, Chrome, or official-app data.</p>
+
+        <h2>Contact</h2>
+        <p>Questions or privacy requests: <a href="mailto:bhoopen22oct@gmail.com">bhoopen22oct@gmail.com</a>.</p>
+      </article>
+    </main>
+
+    <footer>
+      <span>SocialControl &middot; Independent software, not affiliated with the social services you visit.</span>
+      <div class="links">
+        <a href="./">Overview</a>
+        <a href="support.html">Support</a>
+        <a href="terms.html">Terms</a>
+      </div>
+    </footer>
+  </div>
+</body>
+</html>
