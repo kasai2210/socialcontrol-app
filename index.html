@@ -9,6 +9,7 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <div class="ambient" aria-hidden="true"></div>
   <div class="container">
     <header class="topbar">
       <a class="brand" href="./">
@@ -25,42 +26,90 @@
 
     <main>
       <section class="hero">
-        <img class="hero-icon" src="icon.svg" alt="SocialControl app icon">
-        <div class="eyebrow">iOS &amp; Android &middot; 100% On-Device</div>
-        <h1>Keep the connection.<br>Lose the scroll.</h1>
-        <p class="subtitle">
+        <div class="hero-icon-wrap enter" style="--d:0ms">
+          <img class="hero-icon" src="icon.svg" alt="SocialControl app icon">
+        </div>
+        <div class="enter" style="--d:70ms">
+          <span class="eyebrow">iOS &amp; Android &middot; 100% On-Device</span>
+        </div>
+        <h1 class="enter" style="--d:130ms">Keep the connection.<br>Lose the scroll.</h1>
+        <p class="subtitle enter" style="--d:190ms">
           A calm, native workspace that strips Reels, Shorts, and algorithmic feeds from your social apps while keeping DMs, search, chat, and subscriptions.
         </p>
-        <div class="actions">
-          <a class="btn btn-primary" href="support.html">Get Support</a>
+        <div class="actions enter" style="--d:250ms">
+          <a class="btn btn-primary" href="support.html">Support &amp; Help</a>
           <a class="btn btn-secondary" href="privacy.html">Privacy Policy</a>
         </div>
-        <div class="spaces" aria-label="Supported spaces">
-          <span class="space-pill"><span class="dot dot-ig"></span>Instagram</span>
-          <span class="space-pill"><span class="dot dot-yt"></span>YouTube</span>
-          <span class="space-pill"><span class="dot dot-x"></span>X</span>
-          <span class="space-pill"><span class="dot dot-rd"></span>Reddit</span>
-          <span class="space-pill"><span class="dot dot-sc"></span>Snapchat</span>
+        <div class="spaces enter" style="--d:310ms" aria-label="Supported spaces">
+          <span class="space-pill">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7.0301.084c-1.2768.0602-2.1487.264-2.911.5634-.7888.3075-1.4575.72-2.1228 1.3877-.6652.6677-1.075 1.3368-1.3802 2.127-.2954.7638-.4956 1.6365-.552 2.914-.0564 1.2775-.0689 1.6882-.0626 4.947.0062 3.2586.0206 3.6671.0825 4.9473.061 1.2765.264 2.1482.5635 2.9107.308.7889.72 1.4573 1.388 2.1228.6679.6655 1.3365 1.0743 2.1285 1.38.7632.295 1.6361.4961 2.9134.552 1.2773.056 1.6884.069 4.9462.0627 3.2578-.0062 3.668-.0207 4.9478-.0814 1.28-.0607 2.147-.2652 2.9098-.5633.7889-.3086 1.4578-.72 2.1228-1.3881.665-.6682 1.0745-1.3378 1.3795-2.1284.2957-.7632.4966-1.636.552-2.9124.056-1.2809.0692-1.6898.063-4.948-.0063-3.2583-.021-3.6668-.0817-4.9465-.0607-1.2797-.264-2.1487-.5633-2.9117-.3084-.7889-.72-1.4568-1.3876-2.1228C21.2982 1.33 20.628.9208 19.8378.6165 19.074.321 18.2017.1197 16.9244.0645 15.6471.0093 15.236-.005 11.977.0014 8.718.0076 8.31.0215 7.0301.0839m.1402 21.6932c-1.17-.0509-1.8053-.2453-2.2287-.408-.5606-.216-.96-.4771-1.3819-.895-.422-.4178-.6811-.8186-.9-1.378-.1644-.4234-.3624-1.058-.4171-2.228-.0595-1.2645-.072-1.6442-.079-4.848-.007-3.2037.0053-3.583.0607-4.848.05-1.169.2456-1.805.408-2.2282.216-.5613.4762-.96.895-1.3816.4188-.4217.8184-.6814 1.3783-.9003.423-.1651 1.0575-.3614 2.227-.4171 1.2655-.06 1.6447-.072 4.848-.079 3.2033-.007 3.5835.005 4.8495.0608 1.169.0508 1.8053.2445 2.228.408.5608.216.96.4754 1.3816.895.4217.4194.6816.8176.9005 1.3787.1653.4217.3617 1.056.4169 2.2263.0602 1.2655.0739 1.645.0796 4.848.0058 3.203-.0055 3.5834-.061 4.848-.051 1.17-.245 1.8055-.408 2.2294-.216.5604-.4763.96-.8954 1.3814-.419.4215-.8181.6811-1.3783.9-.4224.1649-1.0577.3617-2.2262.4174-1.2656.0595-1.6448.072-4.8493.079-3.2045.007-3.5825-.006-4.848-.0608M16.953 5.5864A1.44 1.44 0 1 0 18.39 4.144a1.44 1.44 0 0 0-1.437 1.4424M5.8385 12.012c.0067 3.4032 2.7706 6.1557 6.173 6.1493 3.4026-.0065 6.157-2.7701 6.1506-6.1733-.0065-3.4032-2.771-6.1565-6.174-6.1498-3.403.0067-6.156 2.771-6.1496 6.1738M8 12.0077a4 4 0 1 1 4.008 3.9921A3.9996 3.9996 0 0 1 8 12.0077"/></svg>
+            Instagram
+          </span>
+          <span class="space-pill">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+            YouTube
+          </span>
+          <span class="space-pill">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14.234 10.162 22.977 0h-2.072l-7.591 8.824L7.251 0H.258l9.168 13.343L.258 24H2.33l8.016-9.318L16.749 24h6.993zm-2.837 3.299-.929-1.329L3.076 1.56h3.182l5.965 8.532.929 1.329 7.754 11.09h-3.182z"/></svg>
+            X
+          </span>
+          <span class="space-pill">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 0C5.373 0 0 5.373 0 12c0 3.314 1.343 6.314 3.515 8.485l-2.286 2.286C.775 23.225 1.097 24 1.738 24H12c6.627 0 12-5.373 12-12S18.627 0 12 0Zm4.388 3.199c1.104 0 1.999.895 1.999 1.999 0 1.105-.895 2-1.999 2-.946 0-1.739-.657-1.947-1.539v.002c-1.147.162-2.032 1.15-2.032 2.341v.007c1.776.067 3.4.567 4.686 1.363.473-.363 1.064-.58 1.707-.58 1.547 0 2.802 1.254 2.802 2.802 0 1.117-.655 2.081-1.601 2.531-.088 3.256-3.637 5.876-7.997 5.876-4.361 0-7.905-2.617-7.998-5.87-.954-.447-1.614-1.415-1.614-2.538 0-1.548 1.255-2.802 2.803-2.802.645 0 1.239.218 1.712.585 1.275-.79 2.881-1.291 4.64-1.365v-.01c0-1.663 1.263-3.034 2.88-3.207.188-.911.993-1.595 1.959-1.595Zm-8.085 8.376c-.784 0-1.459.78-1.506 1.797-.047 1.016.64 1.429 1.426 1.429.786 0 1.371-.369 1.418-1.385.047-1.017-.553-1.841-1.338-1.841Zm7.406 0c-.786 0-1.385.824-1.338 1.841.047 1.017.634 1.385 1.418 1.385.785 0 1.473-.413 1.426-1.429-.046-1.017-.721-1.797-1.506-1.797Zm-3.703 4.013c-.974 0-1.907.048-2.77.135-.147.015-.241.168-.183.305.483 1.154 1.622 1.964 2.953 1.964 1.33 0 2.47-.81 2.953-1.964.057-.137-.037-.29-.184-.305-.863-.087-1.795-.135-2.769-.135Z"/></svg>
+            Reddit
+          </span>
+          <span class="space-pill">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12.206.793c.99 0 4.347.276 5.93 3.821.529 1.193.403 3.219.299 4.847l-.003.06c-.012.18-.022.345-.03.51.075.045.203.09.401.09.3-.016.659-.12 1.033-.301.165-.088.344-.104.464-.104.182 0 .359.029.509.09.45.149.734.479.734.838.015.449-.39.839-1.213 1.168-.089.029-.209.075-.344.119-.45.135-1.139.36-1.333.81-.09.224-.061.524.12.868l.015.015c.06.136 1.526 3.475 4.791 4.014.255.044.435.27.42.509 0 .075-.015.149-.045.225-.24.569-1.273.988-3.146 1.271-.059.091-.12.375-.164.57-.029.179-.074.36-.134.553-.076.271-.27.405-.555.405h-.03c-.135 0-.313-.031-.538-.074-.36-.075-.765-.135-1.273-.135-.3 0-.599.015-.913.074-.6.104-1.123.464-1.723.884-.853.599-1.826 1.288-3.294 1.288-.06 0-.119-.015-.18-.015h-.149c-1.468 0-2.427-.675-3.279-1.288-.599-.42-1.107-.779-1.707-.884-.314-.045-.629-.074-.928-.074-.54 0-.958.089-1.272.149-.211.043-.391.074-.54.074-.374 0-.523-.224-.583-.42-.061-.192-.09-.389-.135-.567-.046-.181-.105-.494-.166-.57-1.918-.222-2.95-.642-3.189-1.226-.031-.063-.052-.15-.055-.225-.015-.243.165-.465.42-.509 3.264-.54 4.73-3.879 4.791-4.02l.016-.029c.18-.345.224-.645.119-.869-.195-.434-.884-.658-1.332-.809-.121-.029-.24-.074-.346-.119-1.107-.435-1.257-.93-1.197-1.273.09-.479.674-.793 1.168-.793.146 0 .27.029.383.074.42.194.789.3 1.104.3.234 0 .384-.06.465-.105l-.046-.569c-.098-1.626-.225-3.651.307-4.837C7.392 1.077 10.739.807 11.727.807l.419-.015h.06z"/></svg>
+            Snapchat
+          </span>
         </div>
       </section>
 
+      <section class="preview-card is-filtered" id="switchPreview" data-reveal>
+        <div class="preview-head">
+          <div>
+            <p class="preview-label">One switch</p>
+            <h2 class="preview-title">Keep what you came for. Quiet the rest.</h2>
+          </div>
+          <button type="button" class="switch-btn" id="demoSwitch" aria-pressed="true">
+            <span id="demoSwitchText">Filters on</span>
+            <span class="switch-track" aria-hidden="true"><span class="switch-knob"></span></span>
+          </button>
+        </div>
+        <div class="feed-chips">
+          <span class="chip chip-keep">Direct Messages</span>
+          <span class="chip chip-noise">Reels Feed</span>
+          <span class="chip chip-keep">Subscriptions</span>
+          <span class="chip chip-noise">YouTube Shorts</span>
+          <span class="chip chip-keep">Search &amp; Profiles</span>
+          <span class="chip chip-noise">Explore Grid</span>
+          <span class="chip chip-keep">Single Shared Video</span>
+          <span class="chip chip-noise">For You &amp; Spotlight</span>
+          <span class="chip chip-keep">Chat</span>
+          <span class="chip chip-noise">Suggested Posts</span>
+        </div>
+        <p class="preview-caption" id="demoCaption">Balanced &amp; Deep Focus controls strip endless feeds live without reloading the page.</p>
+      </section>
+
       <section class="grid" aria-label="Key capabilities">
-        <article class="card">
-          <h2>50 live controls</h2>
+        <article class="card" data-reveal style="--rd:40ms">
+          <span class="card-kicker">50 switches</span>
+          <h2>Live page controls</h2>
           <p>Start with Balanced or Deep Focus presets, or fine-tune Reels, Shorts, Explore, Spotlight, For You, and engagement counts live.</p>
         </article>
-        <article class="card">
+        <article class="card" data-reveal style="--rd:110ms">
+          <span class="card-kicker">Intentional friction</span>
           <h2>Calm 10-second hold</h2>
           <p>Turning guards on is instant. Loosening core protections asks for a deliberate 10-second hold, paired with session timers and Sleep Mode.</p>
         </article>
-        <article class="card">
+        <article class="card" data-reveal style="--rd:180ms">
+          <span class="card-kicker">Zero telemetry</span>
           <h2>Private by design</h2>
           <p>No SocialControl account, no analytics SDK, and no tracking backend. Website sign-ins stay isolated on your device with one-tap clear.</p>
         </article>
       </section>
 
-      <section class="section-card">
-        <h2>What stays, what goes</h2>
+      <section class="section-card" data-reveal>
+        <h2>Built for calm daily use</h2>
         <ul>
           <li><strong>Single shared videos:</strong> Watch the one Reel or Short a friend sent you without falling into an endless swipe feed.</li>
           <li><strong>Intentional tools:</strong> Built-in wall-clock session timer (+2m wrap-up and 5m breather), overnight Sleep Mode, Post Mode, Share Sheet, and Widgets.</li>
@@ -69,7 +118,7 @@
         </ul>
       </section>
 
-      <section class="section-card support-box">
+      <section class="section-card support-box" data-reveal>
         <div>
           <h2>Need help or spotted a filter glitch?</h2>
           <p>Reach out directly by email and include your platform, app version, and space name.</p>
@@ -87,5 +136,42 @@
       </div>
     </footer>
   </div>
+
+  <script>
+    (function () {
+      document.documentElement.classList.add("js-ready");
+
+      var revealNodes = document.querySelectorAll("[data-reveal]");
+      if ("IntersectionObserver" in window) {
+        var io = new IntersectionObserver(function (entries) {
+          entries.forEach(function (entry) {
+            if (entry.isIntersecting) {
+              entry.target.classList.add("is-visible");
+              io.unobserve(entry.target);
+            }
+          });
+        }, { threshold: 0.12, rootMargin: "0px 0px -24px 0px" });
+        revealNodes.forEach(function (el) { io.observe(el); });
+      } else {
+        revealNodes.forEach(function (el) { el.classList.add("is-visible"); });
+      }
+
+      var btn = document.getElementById("demoSwitch");
+      var card = document.getElementById("switchPreview");
+      var text = document.getElementById("demoSwitchText");
+      var caption = document.getElementById("demoCaption");
+      if (btn && card) {
+        btn.addEventListener("click", function () {
+          var next = btn.getAttribute("aria-pressed") !== "true";
+          btn.setAttribute("aria-pressed", String(next));
+          card.classList.toggle("is-filtered", next);
+          text.textContent = next ? "Filters on" : "Standard feed";
+          caption.textContent = next
+            ? "Balanced & Deep Focus controls strip endless feeds live without reloading the page."
+            : "Without filters, short-form feeds and algorithmic recommendations compete for attention.";
+        });
+      }
+    })();
+  </script>
 </body>
 </html>
